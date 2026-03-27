@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div role="tablist" class="tab-list" aria-label="Programming Languages">
+                <button role="tab" aria-selected="true" id="js">JavaScript</button>
+
+                <button role="tab" aria-selected="false" id="php">PHP</button>
+
+                <button role="tab" aria-selected="false" id="ruby">Ruby</button>
+            </div>
+            <div role="tabpanel" class="tab-panel" aria-labelledby="js">
+                <p>JavaScript is great!</p>
+            </div>
+
+            <div role="tabpanel" class="tab-panel" aria-labelledby="php">
+                <p>PHP is great!</p>
+            </div>
+
+            <div role="tabpanel" class="tab-panel" aria-labelledby="ruby">
+                <p>Ruby is great!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
